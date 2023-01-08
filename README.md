@@ -13,7 +13,7 @@
 
 ## 软件说明
 
-- 感谢@CrazyHulk提供以及维护基础EFI
+- 感谢@[CrazyHulk](https://github.com/CrazyHulk/)提供以及维护基础EFI
 - 操作系统版本：macOS Ventura 13.1
 - OpenCore 版本：0.8.7
 - SSD Trim：正常。
@@ -45,9 +45,21 @@ OpenCore的思路是，通过完善ACPI表与UEFI固件来运行macOS：
 
 OpenCore官方([这里](https://github.com/acidanthera/OpenCorePkg))提供了非常详尽的文档，建议阅读Configuration.pdf即知道每个配置项的存在的意义和作用了，待有时间再补充详细修改的地方。
 
+## Build Photos
+机箱/Case
+![Case Photo](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/P1062920.jpg)
+
+MacOS版本
+![MacOS Version](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/Screenshot%202023-01-09%20at%2002.12.24.jpg)
+
+系统其他设备
+![PCIE Slots](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/Screenshot%202023-01-09%20at%2002.14.37.jpg)
+
+
 ## 致谢
 
 - @[CrazyHulk](https://github.com/CrazyHulk/) 提供基础EFI
+- @[acidanthera](https://github.com/acidanthera) OpenCore Bootloader
 - @[Cheney Veron](https://github.com/cheneyveron) 这个大佬在 BIOS 更新后给了我莫大的灵感和建议
 - [Apple](https://www.apple.com)：研发的 macOS 系统
 - @[**vit9696**](https://github.com/vit9696)：制作 Lilu & AppleALC
