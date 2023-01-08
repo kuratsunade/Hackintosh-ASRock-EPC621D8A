@@ -47,7 +47,9 @@ OpenCore官方([这里](https://github.com/acidanthera/OpenCorePkg))提供了非
 
 ## Build Photos
 机箱/Case
+![Case Photo](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/PC291533.jpg)
 ![Case Photo](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/P1062920.jpg)
+![Case Photo](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/P1062949.jpg)
 
 MacOS版本
 ![MacOS Version](https://github.com/kuratsunade/Hackintosh-ASRock-EPC621D8A/raw/master/Build%20Photos/Screenshot%202023-01-09%20at%2002.12.24.jpg)
