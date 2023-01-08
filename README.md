@@ -1,23 +1,28 @@
-# Hackintosh
+# Hackintosh - SMBIOS Mac Pro 7,1
 
 ## 硬件配置
 
 - 主板：Asrock EPC621D8A 
 - BIOS版本：C621D8A2.15E 感谢[远景](bbs.pcbeta.com) @prmvb 提供
-- CPU：Intel GOLD 6278 (LGA3647)
-- 显卡：Sapphire Radeon Nitro+ RX 590 Special Edition
-- 内存：Samsung 32G x 2
-- 硬盘：1. Intel P4500 for windows 2. C2000 pro for Mac OS
-- 网卡：BCM943602CS
+- CPU：Intel Xeon W3175x (LGA3647)
+- 显卡：华硕 TUF 6800XT x 2
+- 内存：镁光DDR4 2400 RECC 16GB x 8
+- 硬盘：WD SN550 x 1 + HP EX900 x 3 (其中两张NVMe由PCIE转接) @ PCIE 2
+- 网卡：上海狄迅科技BCM94360CD (PCIE x 1 + USB线改装) @  PCIE 3
+- 网卡：LR-Link AQC107 @ PCIE 1
 
 ## 软件说明
 
-- 操作系统版本：macOS Monterey 12.1
-- OpenCore 版本：0.8.0
-- RX590：正常。原生驱动。
+- 感谢@CrazyHulk提供以及维护基础EFI
+- 操作系统版本：macOS Ventura 13.1
+- OpenCore 版本：0.8.7
 - SSD Trim：正常。
-- 有个ssdt需要注意，Mac OS 需要屏蔽 P4500 参见 NOBR1A.aml, 但是你们可能不需要，或者跟我插的不是同一个 PCIE 接口，需要注意。
-- CPU 名称已经被自定义, 请自行调整或者删除 NVRAM.4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102.revcpuname
+- SSDT-APCPU以及SSDT-fix - by CrazyHulk
+- 有个ssdt需要注意，Mac OS 需要屏蔽 P4500 参见 NOBR1A.aml, 但是你们可能不需要，或者跟我插的不是同一个 PCIE 接口，需要注意。- by CrazyHulk 
+- 添加SSDT-DMAR修复DMAR问题驱动AQC107 - 默认不加载
+
+## What's NOT Working
+- 四个板载网口 - Intel X722千兆
 
 ## OpenCore 的更新
 
@@ -42,9 +47,9 @@ OpenCore官方([这里](https://github.com/acidanthera/OpenCorePkg))提供了非
 
 ## 致谢
 
+- @[CrazyHulk](https://github.com/CrazyHulk/) 提供基础EFI
 - @[Cheney Veron](https://github.com/cheneyveron) 这个大佬在 BIOS 更新后给了我莫大的灵感和建议
 - [Apple](https://www.apple.com)：研发的 macOS 系统
-- [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/)：强大的通用操作系统引导器
 - @[**vit9696**](https://github.com/vit9696)：制作 Lilu & AppleALC
 - @[**cfmwan**](http://i.pcbeta.com/space-uid-8977.html)：分享的其EFI，其中有制作的修复睡眠、USB等功能的SSDT，见[这里](http://bbs.pcbeta.com/viewthread-1832693-1-1.html)
 - [远景论坛](http://bbs.pcbeta.com) & [InsanelyMac](http://www.insanelymac.com)：提供交流的场所
